@@ -6,11 +6,13 @@
   <artifactId>config_api</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
+
   <properties>
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.eclipse.microprofile</groupId>
@@ -20,9 +22,11 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+
   <build>
     <finalName>${project.artifactId}</finalName>
   </build>
+
   <profiles>
     <profile>
       <id>payara-micro</id>
